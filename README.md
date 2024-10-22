@@ -1,2 +1,2 @@
-# Biofisica
-Computer lab for Biofisica
+# Biofísica
+
