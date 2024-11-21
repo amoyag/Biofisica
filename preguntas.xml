@@ -1,0 +1,1233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+    <question type="multichoice">
+        <name>
+            <text>Q1: C1-FFL Initial State</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[In the C1-FFL network with AND logic, when starting from the initial state {'X': 0, 'Y': 1, 'Z': 1}, what happens to Z?]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text>This relates to understanding how AND logic affects network dynamics.</text>
+        </generalfeedback>
+        <defaultgrade>1.0</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="0">
+            <text>Z remains active indefinitely</text>
+            <feedback>
+                <text>With X inactive, Z cannot maintain its active state in an AND gate configuration.</text>
+            </feedback>
+        </answer>
+        <answer fraction="100">
+            <text>Z deactivates immediately</text>
+            <feedback>
+                <text>Correct! In AND logic, Z requires both X and Y to be active. When X is inactive, Z deactivates regardless of Y's state.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>Z oscillates between active and inactive states</text>
+            <feedback>
+                <text>The system doesn't oscillate in this configuration.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>Z's state depends on random fluctuations</text>
+            <feedback>
+                <text>The behavior is deterministic, not random.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>Z maintains its state until X becomes active</text>
+            <feedback>
+                <text>Z cannot maintain its state without active X in AND logic.</text>
+            </feedback>
+        </answer>
+    </question>
+    <question type="multichoice">
+        <name>
+            <text>Q2: AND vs OR Logic Response</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[What is the primary difference between AND and OR logic in the FFL's response to transient signals?]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text>This question tests understanding of signal processing differences between AND and OR logic.</text>
+        </generalfeedback>
+        <defaultgrade>1.0</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="0">
+            <text>AND logic requires more network nodes</text>
+            <feedback>
+                <text>Both AND and OR logic use the same number of nodes.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>OR logic maintains Z's activation longer</text>
+            <feedback>
+                <text>While OR logic might make Z activation easier, this isn't the primary difference in signal processing.</text>
+            </feedback>
+        </answer>
+        <answer fraction="100">
+            <text>AND logic provides better noise filtering</text>
+            <feedback>
+                <text>Correct! AND logic requires sustained activation of both inputs, making it better at filtering out transient signals.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>OR logic makes the network bistable</text>
+            <feedback>
+                <text>Bistability is not determined by the choice of logic gate in this case.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>AND logic makes X and Y independent</text>
+            <feedback>
+                <text>AND logic actually makes Z dependent on both X and Y, not independent.</text>
+            </feedback>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>Q3: Effect of Reduced Delay</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[When Y's activation delay is reduced from 6 to 2 time steps, what effect is observed?]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text>This question examines how timing affects network behavior.</text>
+        </generalfeedback>
+        <defaultgrade>1.0</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="0">
+            <text>The network loses all steady states</text>
+            <feedback>
+                <text>Changing the delay doesn't affect the existence of steady states.</text>
+            </feedback>
+        </answer>
+        <answer fraction="100">
+            <text>Z responds more quickly to X activation</text>
+            <feedback>
+                <text>Correct! A shorter delay in Y's activation means Z can become active sooner after X activation.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>X becomes permanently inactive</text>
+            <feedback>
+                <text>The delay doesn't affect X's behavior.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>Y becomes independent of X</text>
+            <feedback>
+                <text>The delay only affects timing, not the dependencies between nodes.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>The network develops new cyclical attractors</text>
+            <feedback>
+                <text>The delay doesn't create new attractors.</text>
+            </feedback>
+        </answer>
+    </question>
+    <question type="multichoice">
+        <name>
+            <text>Q4: Steady States in STG</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[In the state transition graph of the AND logic network, steady states are characterized by:]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text>This tests understanding of state transition graphs and steady states.</text>
+        </generalfeedback>
+        <defaultgrade>1.0</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="0">
+            <text>The highest number of incoming edges</text>
+            <feedback>
+                <text>The number of incoming edges doesn't define a steady state.</text>
+            </feedback>
+        </answer>
+        <answer fraction="100">
+            <text>No outgoing edges</text>
+            <feedback>
+                <text>Correct! A steady state has no transitions to other states, thus no outgoing edges.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>The most centrally located nodes</text>
+            <feedback>
+                <text>Node position in the graph visualization isn't relevant to steady states.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>Bidirectional connections only</text>
+            <feedback>
+                <text>Steady states are characterized by absence of outgoing edges, not bidirectional connections.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>The largest node size</text>
+            <feedback>
+                <text>Node size in the visualization isn't relevant to steady states.</text>
+            </feedback>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>Q5: AND vs OR Logic Attractors</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[How does changing to OR logic affect the network's attractors compared to AND logic?]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text>This compares the long-term behavior between AND and OR logic implementations.</text>
+        </generalfeedback>
+        <defaultgrade>1.0</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="0">
+            <text>It increases the number of attractors</text>
+            <feedback>
+                <text>The number of attractors remains the same in our network.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>It eliminates all steady states</text>
+            <feedback>
+                <text>Both logic types maintain the same steady states (000 and 111).</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>It only allows cyclic attractors</text>
+            <feedback>
+                <text>Both logic types have the same types of attractors.</text>
+            </feedback>
+        </answer>
+        <answer fraction="100">
+            <text>It maintains the same attractors (000 and 111)</text>
+            <feedback>
+                <text>Correct! Both AND and OR logic versions have the same attractors in our network.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>It changes the type of attractors</text>
+            <feedback>
+                <text>The types of attractors remain the same.</text>
+            </feedback>
+        </answer>
+    </question>
+    <question type="multichoice">
+        <name>
+            <text>Q6: Quick Deactivation Effect</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[What happens to signal processing when quick_deactivation_step is decreased?]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text>This examines how timing of deactivation affects signal processing.</text>
+        </generalfeedback>
+        <defaultgrade>1.0</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="100">
+            <text>The network becomes more sensitive to noise</text>
+            <feedback>
+                <text>Correct! Quicker deactivation means the system responds more readily to brief signals.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>Z never achieves activation</text>
+            <feedback>
+                <text>Z can still activate; the timing just changes.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>Y becomes permanently active</text>
+            <feedback>
+                <text>Quick deactivation doesn't cause permanent activation.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>The network shows stronger filtering</text>
+            <feedback>
+                <text>Quicker deactivation actually reduces filtering capability.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>X and Y become decoupled</text>
+            <feedback>
+                <text>The dependencies between nodes remain the same.</text>
+            </feedback>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>Q7: Z Activation Requirements</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[In the Boolean network with AND logic, what conditions are required for Z activation?]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text>This tests understanding of AND logic requirements.</text>
+        </generalfeedback>
+        <defaultgrade>1.0</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="0">
+            <text>Either X or Y must be active</text>
+            <feedback>
+                <text>This describes OR logic, not AND logic.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>Only X must be active</text>
+            <feedback>
+                <text>X alone is not sufficient in AND logic.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>Only Y must be active</text>
+            <feedback>
+                <text>Y alone is not sufficient in AND logic.</text>
+            </feedback>
+        </answer>
+        <answer fraction="100">
+            <text>Both X and Y must be active</text>
+            <feedback>
+                <text>Correct! AND logic requires both inputs to be active for activation.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>Z activates independently of X and Y</text>
+            <feedback>
+                <text>Z's activation depends on both X and Y in AND logic.</text>
+            </feedback>
+        </answer>
+    </question>
+    <question type="multichoice">
+        <name>
+            <text>Q8: Z Activity Persistence</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[How does the persistence of Z's activity differ between AND and OR logic?]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text>This compares signal duration characteristics between logic types.</text>
+        </generalfeedback>
+        <defaultgrade>1.0</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="0">
+            <text>It's identical in both cases</text>
+            <feedback>
+                <text>The persistence characteristics differ between AND and OR logic.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>OR logic shows shorter persistence</text>
+            <feedback>
+                <text>OR logic actually shows longer persistence.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>AND logic shows no persistence</text>
+            <feedback>
+                <text>AND logic does show persistence, just less than OR logic.</text>
+            </feedback>
+        </answer>
+        <answer fraction="100">
+            <text>OR logic shows longer persistence</text>
+            <feedback>
+                <text>Correct! OR logic maintains Z's active state longer as it only needs one input to remain active.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>Persistence is random in both cases</text>
+            <feedback>
+                <text>Persistence is deterministic, not random.</text>
+            </feedback>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>Q9: Limit Cycles in STG</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[When analyzing the state transition graph, what indicates a limit cycle?]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text>This tests understanding of cyclic behavior in state transition graphs.</text>
+        </generalfeedback>
+        <defaultgrade>1.0</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="0">
+            <text>A single node with no edges</text>
+            <feedback>
+                <text>This describes a steady state, not a limit cycle.</text>
+            </feedback>
+        </answer>
+        <answer fraction="100">
+            <text>A sequence of states that repeats</text>
+            <feedback>
+                <text>Correct! A limit cycle is a repeating sequence of states in the network.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>States with only incoming edges</text>
+            <feedback>
+                <text>This would be a terminal state, not a cycle.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>Isolated nodes</text>
+            <feedback>
+                <text>Isolated nodes cannot form cycles as they have no transitions.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>States with highest degree centrality</text>
+            <feedback>
+                <text>Degree centrality doesn't define limit cycles.</text>
+            </feedback>
+        </answer>
+    </question>
+    <question type="multichoice">
+        <name>
+            <text>Q10: Biological Interpretation</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[What biological feature is best captured by the delay in Y's activation?]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text>This connects computational modeling to biological processes.</text>
+        </generalfeedback>
+        <defaultgrade>1.0</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="0">
+            <text>Protein degradation</text>
+            <feedback>
+                <text>Degradation is a different process from activation delay.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>DNA replication</text>
+            <feedback>
+                <text>DNA replication is not directly related to gene activation delays.</text>
+            </feedback>
+        </answer>
+        <answer fraction="100">
+            <text>Transcriptional/translational delay</text>
+            <feedback>
+                <text>Correct! The delay represents the time needed for gene expression and protein production.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>Cell division</text>
+            <feedback>
+                <text>Cell division timing is not related to gene activation delays.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>Membrane transport</text>
+            <feedback>
+                <text>Membrane transport is not directly related to activation delays in gene networks.</text>
+            </feedback>
+        </answer>
+    </question>
+
+    <question type="truefalse">
+        <name>
+            <text>Q21: Z Activation in AND Logic</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[In a C1-FFL network with AND logic, Z can be active even when X is inactive.]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text>This tests understanding of AND logic requirements.</text>
+        </generalfeedback>
+        <defaultgrade>1.0</defaultgrade>
+        <penalty>1.0</penalty>
+        <hidden>0</hidden>
+        <answer fraction="0">
+            <text>true</text>
+            <feedback>
+                <text>In AND logic, Z requires both X and Y to be active.</text>
+            </feedback>
+        </answer>
+        <answer fraction="100">
+            <text>false</text>
+            <feedback>
+                <text>Correct! Z cannot be active when X is inactive in AND logic.</text>
+            </feedback>
+        </answer>
+    </question>
+    <question type="truefalse">
+        <name>
+            <text>Q22: Synchronous Updates</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[The synchronous update scheme means that all nodes update their states simultaneously at each time step.]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text>This tests understanding of network update mechanisms.</text>
+        </generalfeedback>
+        <defaultgrade>1.0</defaultgrade>
+        <penalty>1.0</penalty>
+        <hidden>0</hidden>
+        <answer fraction="100">
+            <text>true</text>
+            <feedback>
+                <text>Correct! In synchronous updates, all nodes update their states at the same time.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>false</text>
+            <feedback>
+                <text>Synchronous updating means simultaneous state changes for all nodes.</text>
+            </feedback>
+        </answer>
+    </question>
+
+    <question type="truefalse">
+        <name>
+            <text>Q23: Attractor Changes</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[Changing from AND to OR logic affects the number of attractors in our network.]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text>This tests understanding of network attractors.</text>
+        </generalfeedback>
+        <defaultgrade>1.0</defaultgrade>
+        <penalty>1.0</penalty>
+        <hidden>0</hidden>
+        <answer fraction="0">
+            <text>true</text>
+            <feedback>
+                <text>The attractors (000 and 111) remain the same in both logic types.</text>
+            </feedback>
+        </answer>
+        <answer fraction="100">
+            <text>false</text>
+            <feedback>
+                <text>Correct! The network maintains the same attractors regardless of logic type.</text>
+            </feedback>
+        </answer>
+    </question>
+
+    <question type="truefalse">
+        <name>
+            <text>Q24: Signal Filtering</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[The delay in Y's activation helps the network filter out transient signals.]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text>This tests understanding of network signal processing.</text>
+        </generalfeedback>
+        <defaultgrade>1.0</defaultgrade>
+        <penalty>1.0</penalty>
+        <hidden>0</hidden>
+        <answer fraction="100">
+            <text>true</text>
+            <feedback>
+                <text>Correct! The delay helps filter out brief input signals.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>false</text>
+            <feedback>
+                <text>The delay is a key mechanism for filtering transient signals.</text>
+            </feedback>
+        </answer>
+    </question>
+    <question type="truefalse">
+        <name>
+            <text>Q25: OR Logic Deactivation</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[In the OR logic configuration, Z requires both X and Y to be inactive to deactivate.]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text>This tests understanding of OR logic deactivation conditions.</text>
+        </generalfeedback>
+        <defaultgrade>1.0</defaultgrade>
+        <penalty>1.0</penalty>
+        <hidden>0</hidden>
+        <answer fraction="100">
+            <text>true</text>
+            <feedback>
+                <text>Correct! In OR logic, Z only deactivates when both inputs are inactive.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>false</text>
+            <feedback>
+                <text>OR logic maintains Z's activation as long as either input is active.</text>
+            </feedback>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>Q26: No Delay Effects</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[What happens to network dynamics if we remove the delay in Y's activation?]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text>This examines the role of delays in network behavior.</text>
+        </generalfeedback>
+        <defaultgrade>1.0</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="0">
+            <text>The network becomes unstable</text>
+            <feedback>
+                <text>Removing delay doesn't affect stability.</text>
+            </feedback>
+        </answer>
+        <answer fraction="100">
+            <text>The network loses its noise filtering capability</text>
+            <feedback>
+                <text>Correct! The delay is crucial for filtering out transient signals.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>New attractors emerge</text>
+            <feedback>
+                <text>Delays don't affect the number or type of attractors.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>X becomes independent of Y</text>
+            <feedback>
+                <text>Delays don't affect network dependencies.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>Z becomes permanently active</text>
+            <feedback>
+                <text>Removing delay doesn't cause permanent activation.</text>
+            </feedback>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>Q27: Initial Conditions</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[How do the initial conditions affect the network's behavior?]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text>This tests understanding of initial state effects.</text>
+        </generalfeedback>
+        <defaultgrade>1.0</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="0">
+            <text>They only matter for OR logic</text>
+            <feedback>
+                <text>Initial conditions matter for both logic types.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>They determine the number of attractors</text>
+            <feedback>
+                <text>Attractors are determined by network structure, not initial conditions.</text>
+            </feedback>
+        </answer>
+        <answer fraction="100">
+            <text>They determine which attractor the system reaches</text>
+            <feedback>
+                <text>Correct! Initial conditions determine the trajectory to specific attractors.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>They affect the update scheme</text>
+            <feedback>
+                <text>Update schemes are independent of initial conditions.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>They have no effect on long-term behavior</text>
+            <feedback>
+                <text>Initial conditions can affect which attractor is reached.</text>
+            </feedback>
+        </answer>
+    </question>
+    <question type="multichoice">
+        <name>
+            <text>Q28: State Transition Graph</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[Which statement about the state transition graph is correct?]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text>This tests understanding of state transition graphs.</text>
+        </generalfeedback>
+        <defaultgrade>1.0</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="100">
+            <text>It shows all possible state transitions under the given update rules</text>
+            <feedback>
+                <text>Correct! The STG is a complete map of all possible transitions.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>It depends on the initial conditions</text>
+            <feedback>
+                <text>The STG shows all possible transitions regardless of initial conditions.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>It changes with different simulation times</text>
+            <feedback>
+                <text>The STG is determined by update rules, not simulation time.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>It only shows stable states</text>
+            <feedback>
+                <text>The STG shows all states and transitions, not just stable states.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>It represents only transient behaviors</text>
+            <feedback>
+                <text>The STG shows both transient and long-term behaviors.</text>
+            </feedback>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>Q29: Biological Modeling</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[What biological scenario could this FFL network model?]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text>This tests understanding of biological applications.</text>
+        </generalfeedback>
+        <defaultgrade>1.0</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="0">
+            <text>Cell division</text>
+            <feedback>
+                <text>FFLs typically model gene regulation, not cell division.</text>
+            </feedback>
+        </answer>
+        <answer fraction="100">
+            <text>Gene regulation with transcriptional delay</text>
+            <feedback>
+                <text>Correct! FFLs are common motifs in gene regulatory networks.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>Protein degradation</text>
+            <feedback>
+                <text>The FFL models activation patterns, not degradation.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>DNA replication</text>
+            <feedback>
+                <text>FFLs model regulatory relationships, not DNA replication.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>Membrane transport</text>
+            <feedback>
+                <text>FFLs typically model gene regulation, not membrane transport.</text>
+            </feedback>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>Q30: Random Updates</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[How would introducing randomness in the update scheme affect the network?]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text>This tests understanding of update schemes.</text>
+        </generalfeedback>
+        <defaultgrade>1.0</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="0">
+            <text>It would create new steady states</text>
+            <feedback>
+                <text>Update schemes don't change the steady states.</text>
+            </feedback>
+        </answer>
+        <answer fraction="100">
+            <text>It would make state transitions non-deterministic</text>
+            <feedback>
+                <text>Correct! Random updates would create probabilistic transitions between states.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>It would eliminate all attractors</text>
+            <feedback>
+                <text>Attractors still exist with random updates.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>It would remove the delay in Y</text>
+            <feedback>
+                <text>Update schemes don't affect programmed delays.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>It would change the logic gates</text>
+            <feedback>
+                <text>Update schemes don't affect the logic of the gates.</text>
+            </feedback>
+        </answer>
+    </question>
+    <question type="multichoice">
+        <name>
+            <text>Q11: Synchronous Update</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[The synchronous update scheme in the simulation means:]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text>This tests understanding of network update mechanisms.</text>
+        </generalfeedback>
+        <defaultgrade>1.0</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="0">
+            <text>Only one node updates at a time</text>
+            <feedback>
+                <text>This would be asynchronous updating.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>Nodes update in random order</text>
+            <feedback>
+                <text>Random updates are a different update scheme.</text>
+            </feedback>
+        </answer>
+        <answer fraction="100">
+            <text>All nodes update simultaneously</text>
+            <feedback>
+                <text>Correct! Synchronous updates mean all nodes change state at the same time.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>Updates occur only when X is active</text>
+            <feedback>
+                <text>Updates occur regardless of X's state.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>Updates depend on Z's state</text>
+            <feedback>
+                <text>The update scheme is independent of any node's state.</text>
+            </feedback>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>Q12: OR Logic Deactivation</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[In the OR logic network, Z deactivation requires:]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text>This tests understanding of OR logic behavior.</text>
+        </generalfeedback>
+        <defaultgrade>1.0</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="0">
+            <text>Either X or Y to be inactive</text>
+            <feedback>
+                <text>In OR logic, one inactive input is not sufficient for deactivation.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>Only X to be inactive</text>
+            <feedback>
+                <text>X's inactivity alone doesn't cause deactivation in OR logic.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>Only Y to be inactive</text>
+            <feedback>
+                <text>Y's inactivity alone doesn't cause deactivation in OR logic.</text>
+            </feedback>
+        </answer>
+        <answer fraction="100">
+            <text>Both X and Y to be inactive</text>
+            <feedback>
+                <text>Correct! In OR logic, Z only deactivates when both inputs are inactive.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>Z never deactivates</text>
+            <feedback>
+                <text>Z can deactivate when both inputs are inactive.</text>
+            </feedback>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>Q13: Initial Transient</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[The initial transient in the network represents:]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text>This tests understanding of network dynamics.</text>
+        </generalfeedback>
+        <defaultgrade>1.0</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="0">
+            <text>The steady state behavior</text>
+            <feedback>
+                <text>The initial transient precedes steady state behavior.</text>
+            </feedback>
+        </answer>
+        <answer fraction="100">
+            <text>The network's adjustment period</text>
+            <feedback>
+                <text>Correct! The initial transient is the period where the network adjusts from initial conditions.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>Random fluctuations</text>
+            <feedback>
+                <text>The transient is deterministic, not random.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>Programming errors</text>
+            <feedback>
+                <text>Transients are normal network behavior, not errors.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>System failure</text>
+            <feedback>
+                <text>Transients are normal behavior, not failures.</text>
+            </feedback>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>Q14: Multiple Attractors</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[What does the presence of multiple attractors in a network indicate?]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text>This tests understanding of network attractors.</text>
+        </generalfeedback>
+        <defaultgrade>1.0</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="0">
+            <text>The network is unstable</text>
+            <feedback>
+                <text>Multiple attractors don't indicate instability.</text>
+            </feedback>
+        </answer>
+        <answer fraction="100">
+            <text>The system has multiple stable states</text>
+            <feedback>
+                <text>Correct! Multiple attractors represent different stable behaviors the system can achieve.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>The simulation is incorrect</text>
+            <feedback>
+                <text>Multiple attractors are a valid network property.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>The network is too simple</text>
+            <feedback>
+                <text>Network complexity isn't determined by number of attractors.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>The updates are asynchronous</text>
+            <feedback>
+                <text>Attractors exist regardless of update scheme.</text>
+            </feedback>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>Q15: Noise Response</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[How does the network's response to noise differ between AND and OR logic?]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text>This tests understanding of noise filtering properties.</text>
+        </generalfeedback>
+        <defaultgrade>1.0</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="0">
+            <text>They respond identically to noise</text>
+            <feedback>
+                <text>The logic gates have different noise filtering properties.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>AND logic amplifies noise more</text>
+            <feedback>
+                <text>AND logic actually provides better filtering.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>OR logic provides better filtering</text>
+            <feedback>
+                <text>OR logic is more sensitive to noise than AND logic.</text>
+            </feedback>
+        </answer>
+        <answer fraction="100">
+            <text>AND logic provides better filtering</text>
+            <feedback>
+                <text>Correct! AND logic requires sustained activation of both inputs, providing better noise filtering.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>Neither logic affects noise response</text>
+            <feedback>
+                <text>The choice of logic gate significantly affects noise filtering.</text>
+            </feedback>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>Q16: Key Difference in Z Behavior</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[What is the key difference in Z's behavior between AND and OR logic circuits?]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text>This tests understanding of logic gate effects.</text>
+        </generalfeedback>
+        <defaultgrade>1.0</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="0">
+            <text>The total number of possible states</text>
+            <feedback>
+                <text>The number of possible states remains the same.</text>
+            </feedback>
+        </answer>
+        <answer fraction="100">
+            <text>The conditions required for Z activation</text>
+            <feedback>
+                <text>Correct! AND requires both inputs while OR requires only one.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>The number of steady states</text>
+            <feedback>
+                <text>The steady states are the same in both cases.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>The dependency on initial conditions</text>
+            <feedback>
+                <text>Initial condition effects are similar for both logics.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>The time needed to reach steady state</text>
+            <feedback>
+                <text>Timing to reach steady state isn't the key difference.</text>
+            </feedback>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>Q17: State Transition Path</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[In the state transition graph, what path is followed when starting from state 110 (X=1, Y=1, Z=0)?]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text>This tests understanding of state transitions.</text>
+        </generalfeedback>
+        <defaultgrade>1.0</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="0">
+            <text>It remains in 110 indefinitely</text>
+            <feedback>
+                <text>This state transitions to a different state.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>It moves to 000</text>
+            <feedback>
+                <text>With X and Y active, Z becomes active.</text>
+            </feedback>
+        </answer>
+        <answer fraction="100">
+            <text>It moves to 111</text>
+            <feedback>
+                <text>Correct! With X and Y active, Z becomes active in the next step.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>It oscillates between 110 and 101</text>
+            <feedback>
+                <text>The network doesn't show this oscillatory behavior.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>It moves randomly through states</text>
+            <feedback>
+                <text>State transitions are deterministic, not random.</text>
+            </feedback>
+        </answer>
+    </question>
+
+    <question type="multichoice">
+        <name>
+            <text>Q18: Network Steady States</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[Which statement is true about the network's steady states?]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text>This tests understanding of steady states.</text>
+        </generalfeedback>
+        <defaultgrade>1.0</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="0">
+            <text>They only occur with AND logic</text>
+            <feedback>
+                <text>Both AND and OR logic have steady states.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>They depend on the update scheme</text>
+            <feedback>
+                <text>The steady states are independent of the update scheme.</text>
+            </feedback>
+        </answer>
+        <answer fraction="100">
+            <text>They are the same for both AND and OR logic (000 and 111)</text>
+            <feedback>
+                <text>Correct! Both logic types maintain the same steady states.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>They depend on different initial conditions</text>
+            <feedback>
+                <text>Steady states are fixed points regardless of initial conditions.</text>
+            </feedback>
+        </answer>
+        <answer fraction="0">
+            <text>They only exist when X is active</text>
+            <feedback>
+                <text>Steady states exist for both active and inactive X.</text>
+            </feedback>
+        </answer>
+    </question>
+
+</quiz>
