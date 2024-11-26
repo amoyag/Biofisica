@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="multichoice">
+    <name>
+        <text>Q20 I1-FFL Repression Strength</text>
+    </name>
+    <questiontext format="html">
+        <text>The key difference between weak and strong repression in incoherent type-1 feed-forward loop is:</text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text>The repression strength in an I1-FFL affects how abruptly the target gene is shut off once the repressor accumulates. Strong repression creates a more defined pulse with sharper transitions, while weak repression results in more gradual changes.</text>
+    </generalfeedback>
+    <answer fraction="0">
+        <text>Only the steady state level</text>
+        <feedback>
+            <text>Incorrect. Repression strength primarily affects the dynamics of the pulse, not just the final level.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Only the response time</text>
+        <feedback>
+            <text>Incorrect. The effect is on the overall shape of the pulse, not just its timing.</text>
+        </feedback>
+    </answer>
+    <answer fraction="100">
+        <text>The sharpness of the pulse profile</text>
+        <feedback>
+            <text>Correct! Strong repression creates sharper, more defined pulses, while weak repression leads to broader, less defined pulses.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>The initial lag time</text>
+        <feedback>
+            <text>Incorrect. Lag time is more affected by activation parameters than repression strength.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>The final decay rate</text>
+        <feedback>
+            <text>Incorrect. The final decay rate is more influenced by degradation parameters than repression strength.</text>
+        </feedback>
+    </answer>
+</question>
+
+<question type="multichoice">
+    <name>
+        <text>Q21 NAR Threshold Prominence</text>
+    </name>
+    <questiontext format="html">
+        <text>In negative auto-regulation, the effect of activation threshold is most prominent when:</text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text>The activation threshold's effect is most noticeable when it's near the steady state concentration, as small changes in threshold can significantly affect the balance between production and repression. This creates the most sensitive response to threshold variations.</text>
+    </generalfeedback>
+    <answer fraction="0">
+        <text>The cooperativity is very low</text>
+        <feedback>
+            <text>Incorrect. Low cooperativity actually reduces the prominence of threshold effects.</text>
+        </feedback>
+    </answer>
+    <answer fraction="100">
+        <text>The threshold is close to the steady state concentration</text>
+        <feedback>
+            <text>Correct! This creates the most sensitive response to threshold variations as it's where the feedback is most active.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>The degradation rate is very high</text>
+        <feedback>
+            <text>Incorrect. High degradation rates don't specifically enhance threshold effects.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>The production rate is very low</text>
+        <feedback>
+            <text>Incorrect. Low production rates don't maximize threshold sensitivity.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>The initial concentration is zero</text>
+        <feedback>
+            <text>Incorrect. Initial conditions don't affect the steady-state importance of the threshold.</text>
+        </feedback>
+    </answer>
+</question>
+
+<question type="multichoice">
+    <name>
+        <text>Q22 AND FFL Signal Filtering Failure</text>
+    </name>
+    <questiontext format="html">
+        <text>The AND feed-forward loop fails to filter transient signals when:</text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text>The filtering function of an AND FFL depends on the intermediate regulator taking sufficient time to accumulate. If the intermediate regulator degrades too quickly relative to typical signal durations, it cannot accumulate enough to enable the AND logic, causing the filtering to fail.</text>
+    </generalfeedback>
+    <answer fraction="0">
+        <text>Input signal threshold is too high</text>
+        <feedback>
+            <text>Incorrect. High input thresholds would actually enhance filtering.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Target gene degradation is too low</text>
+        <feedback>
+            <text>Incorrect. Target gene degradation doesn't significantly affect filtering capability.</text>
+        </feedback>
+    </answer>
+    <answer fraction="100">
+        <text>Intermediate regulator degradation is too high relative to the signal duration</text>
+        <feedback>
+            <text>Correct! Rapid degradation prevents sufficient accumulation of the intermediate regulator, compromising the filtering function.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Target gene production is too high</text>
+        <feedback>
+            <text>Incorrect. Target gene production rates don't affect the filtering mechanism.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>The initial concentration of intermediate regulator is too high</text>
+        <feedback>
+            <text>Incorrect. Initial concentrations don't determine filtering capability.</text>
+        </feedback>
+    </answer>
+</question>
+
+<question type="multichoice">
+    <name>
+        <text>Q23 OR FFL Maximum Memory</text>
+    </name>
+    <questiontext format="html">
+        <text>The memory duration of OR feed-forward loop is maximum when:</text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text>Memory duration in an OR FFL depends on how long the intermediate regulator can maintain target gene activation after the input signal disappears. This is maximized when the intermediate regulator degrades slowly and maintains a high concentration relative to its activation threshold.</text>
+    </generalfeedback>
+    <answer fraction="0">
+        <text>Input signal degrades very slowly</text>
+        <feedback>
+            <text>Incorrect. Input signal degradation rate doesn't affect memory after signal removal.</text>
+        </feedback>
+    </answer>
+    <answer fraction="100">
+        <text>Intermediate regulator degrades very slowly and its steady state is high</text>
+        <feedback>
+            <text>Correct! This combination allows the intermediate regulator to maintain activation for the longest time.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Target gene has the lowest degradation rate</text>
+        <feedback>
+            <text>Incorrect. Target gene degradation doesn't determine memory duration.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>All components degrade at the same rate</text>
+        <feedback>
+            <text>Incorrect. Equal degradation rates don't optimize memory duration.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>The system has high activation thresholds</text>
+        <feedback>
+            <text>Incorrect. High thresholds would actually reduce memory duration.</text>
+        </feedback>
+    </answer>
+</question>
+
+<question type="multichoice">
+    <name>
+        <text>Q24 I1-FFL Pulse Formation Failure</text>
+    </name>
+    <questiontext format="html">
+        <text>In the incoherent type-1 feed-forward loop, pulse formation fails when:</text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text>Pulse formation in an I1-FFL requires a balance between direct activation and delayed repression. The pulse fails to form when the repression is too weak to overcome the direct activation, resulting in sustained rather than transient activation.</text>
+    </generalfeedback>
+    <answer fraction="0">
+        <text>The cooperativity is too high</text>
+        <feedback>
+            <text>Incorrect. High cooperativity typically enhances pulse formation.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Target gene degradation is too high</text>
+        <feedback>
+            <text>Incorrect. High target gene degradation affects pulse amplitude but not formation.</text>
+        </feedback>
+    </answer>
+    <answer fraction="100">
+        <text>Intermediate regulator repression is too weak relative to input signal activation</text>
+        <feedback>
+            <text>Correct! Weak repression cannot overcome direct activation, preventing pulse formation.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Target gene production is too high</text>
+        <feedback>
+            <text>Incorrect. High production affects pulse height but not formation.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Intermediate regulator threshold is too low</text>
+        <feedback>
+            <text>Incorrect. Low thresholds typically enhance rather than prevent pulse formation.</text>
+        </feedback>
+    </answer>
+</question>
+
+<question type="multichoice">
+    <name>
+        <text>Q25 NAR Response Acceleration</text>
+    </name>
+    <questiontext format="html">
+        <text>The response acceleration in negative auto-regulation is most effective when:</text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text>Response acceleration in negative auto-regulation works best when there's a high initial production rate but the activation threshold is set appropriately to prevent overshooting. This allows rapid approach to steady state while maintaining stability.</text>
+    </generalfeedback>
+    <answer fraction="100">
+        <text>Maximum transcription rate is high and activation threshold is appropriately scaled</text>
+        <feedback>
+            <text>Correct! This combination allows rapid initial production with properly timed feedback activation.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Degradation rate is very low</text>
+        <feedback>
+            <text>Incorrect. Low degradation would slow down the response.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>The cooperativity is very low</text>
+        <feedback>
+            <text>Incorrect. Low cooperativity reduces the effectiveness of the feedback.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Activation threshold is much higher than steady state</text>
+        <feedback>
+            <text>Incorrect. Too high thresholds delay the onset of feedback.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>The initial concentration is high</text>
+        <feedback>
+            <text>Incorrect. Initial concentration doesn't affect the inherent response acceleration capability.</text>
+        </feedback>
+    </answer>
+</question>
+
+<question type="multichoice">
+    <name>
+        <text>Q26 AND FFL Delay Predictability</text>
+    </name>
+    <questiontext format="html">
+        <text>In an AND feed-forward loop, the delay time becomes more predictable when:</text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text>Delay time predictability in an AND FFL depends on the consistency of the intermediate regulator's accumulation dynamics. Well-defined production and degradation rates create a more reliable time to reach the activation threshold.</text>
+    </generalfeedback>
+    <answer fraction="0">
+        <text>Input signal varies randomly</text>
+        <feedback>
+            <text>Incorrect. Signal variability would make the delay less predictable.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Target gene has variable degradation rate</text>
+        <feedback>
+            <text>Incorrect. Target gene variability doesn't affect delay predictability.</text>
+        </feedback>
+    </answer>
+    <answer fraction="100">
+        <text>Intermediate regulator's production and degradation rates are well-defined</text>
+        <feedback>
+            <text>Correct! Consistent intermediate regulator dynamics lead to predictable delays.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Activation thresholds fluctuate</text>
+        <feedback>
+            <text>Incorrect. Threshold fluctuations would make delays less predictable.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Initial conditions vary</text>
+        <feedback>
+            <text>Incorrect. Variable initial conditions reduce predictability.</text>
+        </feedback>
+    </answer>
+</question>
+
+<question type="multichoice">
+    <name>
+        <text>Q27 OR FFL Memory Function</text>
+    </name>
+    <questiontext format="html">
+        <text>The OR feed-forward loop memory function is most similar to:</text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text>The memory function of an OR FFL, where activity can be maintained after input removal through an alternative pathway, is functionally similar to a toggle switch, which can maintain its state after the initial triggering signal is removed.</text>
+    </generalfeedback>
+    <answer fraction="0">
+        <text>Negative auto-regulation</text>
+        <feedback>
+            <text>Incorrect. Negative auto-regulation doesn't exhibit memory properties.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Simple regulation</text>
+        <feedback>
+            <text>Incorrect. Simple regulation shows no memory effects.</text>
+        </feedback>
+    </answer>
+    <answer fraction="100">
+        <text>A toggle switch</text>
+        <feedback>
+            <text>Correct! Both systems can maintain their state after the original signal is removed.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>An oscillator</text>
+        <feedback>
+            <text>Incorrect. Oscillators show periodic behavior rather than memory.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>AND feed-forward loop</text>
+        <feedback>
+            <text>Incorrect. AND FFL serves as a persistence detector, not a memory device.</text>
+        </feedback>
+    </answer>
+</question>
+
+<question type="multichoice">
+    <name>
+        <text>Q28 I1-FFL Pulse Generation</text>
+    </name>
+    <questiontext format="html">
+        <text>The pulse-generating capability of incoherent type-1 feed-forward loop is enhanced by:</text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text>Effective pulse generation in I1-FFL requires strong repression that kicks in at the right time to shut off the target gene. This creates sharp, well-defined pulses rather than gradual changes in expression.</text>
+    </generalfeedback>
+    <answer fraction="0">
+        <text>Very low cooperativity</text>
+        <feedback>
+            <text>Incorrect. Low cooperativity leads to less defined pulses.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Equal degradation rates for all components</text>
+        <feedback>
+            <text>Incorrect. Equal degradation rates don't optimize pulse generation.</text>
+        </feedback>
+    </answer>
+    <answer fraction="100">
+        <text>Strong repression and appropriate timing of intermediate regulator</text>
+        <feedback>
+            <text>Correct! This combination creates sharp, well-defined pulses.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Minimal difference between activation thresholds</text>
+        <feedback>
+            <text>Incorrect. Similar thresholds don't enhance pulse generation.</text>
+        </feedback>
+    </answer>
+</question>    
+</quiz> 
