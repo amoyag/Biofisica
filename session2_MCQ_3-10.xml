@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="multichoice">
+    <name>
+        <text>Q3 AND FFL Short Signal Response</text>
+    </name>
+    <questiontext format="html">
+        <text>In an AND feed-forward loop, if the input signal duration is shorter than the calculated delay:</text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text>The AND feed-forward loop acts as a persistence detector, filtering out brief signals. It requires both the input signal and the intermediate regulator to be active for the target gene to be expressed. If the signal duration is shorter than the time needed for the intermediate regulator to reach its activation threshold, the target gene will not be significantly expressed.</text>
+    </generalfeedback>
+    <answer fraction="0">
+        <text>Target gene reaches its maximum possible level</text>
+        <feedback>
+            <text>Incorrect. Brief signals cannot produce maximum target gene expression as there isn't enough time for the intermediate regulator to accumulate.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Intermediate regulator reaches steady state but target gene does not</text>
+        <feedback>
+            <text>Incorrect. With a brief signal, the intermediate regulator doesn't have time to reach steady state.</text>
+        </feedback>
+    </answer>
+    <answer fraction="100">
+        <text>Target gene shows minimal or no response</text>
+        <feedback>
+            <text>Correct! Short signals are filtered out because the intermediate regulator doesn't have time to reach levels sufficient for target gene activation.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>The system behaves like simple regulation</text>
+        <feedback>
+            <text>Incorrect. Simple regulation would show some response even to brief signals, unlike the AND feed-forward loop.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Input signal and intermediate regulator reach steady state simultaneously</text>
+        <feedback>
+            <text>Incorrect. The intermediate regulator responds with a delay relative to the input signal.</text>
+        </feedback>
+    </answer>
+</question>
+
+<question type="multichoice">
+    <name>
+        <text>Q4 OR FFL Memory Duration</text>
+    </name>
+    <questiontext format="html">
+        <text>The primary factor determining memory duration in an OR feed-forward loop is:</text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text>The OR feed-forward loop can maintain target gene expression after the input signal disappears through the intermediate regulator pathway. The duration of this memory effect primarily depends on how long the intermediate regulator remains above its activation threshold, which is directly determined by its degradation rate.</text>
+    </generalfeedback>
+    <answer fraction="0">
+        <text>The degradation rate of the input signal</text>
+        <feedback>
+            <text>Incorrect. Once the input signal is gone, its degradation rate no longer affects the system's memory.</text>
+        </feedback>
+    </answer>
+    <answer fraction="100">
+        <text>The degradation rate of the intermediate regulator</text>
+        <feedback>
+            <text>Correct! This determines how long the intermediate regulator remains above its activation threshold after input signal removal, directly controlling memory duration.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>The production rate of the target gene</text>
+        <feedback>
+            <text>Incorrect. While this affects the level of expression, it doesn't determine how long the memory lasts.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>The initial concentration of input signal</text>
+        <feedback>
+            <text>Incorrect. The initial signal strength doesn't significantly affect memory duration once the system has reached steady state.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>The activation threshold of the input signal</text>
+        <feedback>
+            <text>Incorrect. The input signal threshold doesn't affect memory duration after the signal is removed.</text>
+        </feedback>
+    </answer>
+</question>
+
+<question type="multichoice">
+    <name>
+        <text>Q5 I1-FFL Pulse Sharpness</text>
+    </name>
+    <questiontext format="html">
+        <text>In the incoherent type-1 feed-forward loop, which parameter combination creates the sharpest pulse?</text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text>The sharpness of the pulse in an I1-FFL depends on how quickly and strongly the intermediate regulator can repress the target gene once it accumulates. High cooperativity makes the repression more switch-like, while a low repressor threshold ensures this happens at the right concentration.</text>
+    </generalfeedback>
+    <answer fraction="0">
+        <text>Low cooperativity with high repressor threshold</text>
+        <feedback>
+            <text>Incorrect. This combination would produce a gradual, weak repression leading to a broad, undefined pulse.</text>
+        </feedback>
+    </answer>
+    <answer fraction="100">
+        <text>High cooperativity with low repressor threshold</text>
+        <feedback>
+            <text>Correct! This combination ensures sharp, switch-like repression once the intermediate regulator reaches its threshold.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Equal production and degradation rates for target gene</text>
+        <feedback>
+            <text>Incorrect. While these rates affect pulse amplitude, they don't primarily determine pulse sharpness.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Very low degradation rate of intermediate regulator</text>
+        <feedback>
+            <text>Incorrect. This would actually lead to slower repression and a less sharp pulse.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>High production rate with low degradation of target gene</text>
+        <feedback>
+            <text>Incorrect. These parameters affect pulse height but not its sharpness.</text>
+        </feedback>
+    </answer>
+</question>
+
+<question type="multichoice">
+    <name>
+        <text>Q6 NAR Cooperativity Effect</text>
+    </name>
+    <questiontext format="html">
+        <text>The effect of increasing cooperativity in negative auto-regulation is:</text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text>Cooperativity in negative auto-regulation affects how sharply the system responds to changes in protein concentration. Higher cooperativity makes the feedback more switch-like, leading to a faster approach to steady state and a more defined response curve.</text>
+    </generalfeedback>
+    <answer fraction="100">
+        <text>Steeper response curve and faster approach to steady state</text>
+        <feedback>
+            <text>Correct! Higher cooperativity makes the feedback more switch-like, resulting in a sharper response and faster steady state achievement.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Slower response time but higher steady state</text>
+        <feedback>
+            <text>Incorrect. Higher cooperativity actually speeds up the response and doesn't necessarily increase steady state.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Linear increase in protein production</text>
+        <feedback>
+            <text>Incorrect. Higher cooperativity makes the response more non-linear, not linear.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Decreased steady state with no effect on response time</text>
+        <feedback>
+            <text>Incorrect. Cooperativity affects both the response dynamics and the approach to steady state.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Increased noise in protein levels</text>
+        <feedback>
+            <text>Incorrect. Negative auto-regulation typically reduces noise, even with higher cooperativity.</text>
+        </feedback>
+    </answer>
+</question>
+
+<question type="multichoice">
+    <name>
+        <text>Q7 AND FFL Intermediate Regulator Effect</text>
+    </name>
+    <questiontext format="html">
+        <text>What happens to the AND feed-forward loop delay time when you increase the degradation rate of the intermediate regulator?</text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text>The delay in an AND feed-forward loop depends on how long it takes the intermediate regulator to reach its activation threshold. A higher degradation rate means the intermediate regulator accumulates more slowly, but also means it will reach steady state faster, resulting in a shorter delay time.</text>
+    </generalfeedback>
+    <answer fraction="100">
+        <text>Delay time decreases</text>
+        <feedback>
+            <text>Correct! Faster degradation leads to quicker establishment of steady state levels and thus shorter delay times.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Delay time increases</text>
+        <feedback>
+            <text>Incorrect. Higher degradation actually speeds up the approach to steady state, reducing delay time.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Delay time remains unchanged</text>
+        <feedback>
+            <text>Incorrect. The degradation rate directly affects how quickly the intermediate regulator reaches its steady state.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Delay time becomes more variable</text>
+        <feedback>
+            <text>Incorrect. The delay time remains predictable, just shorter.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Delay time oscillates</text>
+        <feedback>
+            <text>Incorrect. The AND feed-forward loop doesn't produce oscillations in delay time.</text>
+        </feedback>
+    </answer>
+</question>
+
+<question type="multichoice">
+    <name>
+        <text>Q8 OR FFL Steady State</text>
+    </name>
+    <questiontext format="html">
+        <text>The steady state level of the target gene in an OR feed-forward loop after input signal removal primarily depends on:</text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text>After the input signal is removed, the target gene's expression depends on the intermediate regulator's ability to maintain activation. This is determined by both how much intermediate regulator remains (affected by its degradation rate) and whether this amount is sufficient to maintain activation (determined by the activation threshold).</text>
+    </generalfeedback>
+    <answer fraction="0">
+        <text>The initial level of input signal</text>
+        <feedback>
+            <text>Incorrect. Once the input signal is removed, its initial level no longer affects the steady state.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>The production rate of input signal</text>
+        <feedback>
+            <text>Incorrect. After signal removal, input signal production is no longer relevant.</text>
+        </feedback>
+    </answer>
+    <answer fraction="100">
+        <text>The activation threshold and degradation rate of the intermediate regulator</text>
+        <feedback>
+            <text>Correct! These parameters determine whether enough intermediate regulator remains above threshold to maintain target gene expression.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>The production rate of target gene only</text>
+        <feedback>
+            <text>Incorrect. Without sufficient intermediate regulator above threshold, production rate alone cannot maintain expression.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>The initial concentration of target gene</text>
+        <feedback>
+            <text>Incorrect. The initial target gene concentration doesn't affect the final steady state.</text>
+        </feedback>
+    </answer>
+</question>
+
+<question type="multichoice">
+    <name>
+        <text>Q9 I1-FFL Pulse Height</text>
+    </name>
+    <questiontext format="html">
+        <text>In the incoherent type-1 feed-forward loop, what determines the pulse height?</text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text>The pulse height in an I1-FFL results from the balance between the direct activation of the target gene and its repression through the intermediate regulator. This balance is determined by the target gene's production and degradation rates, and how strongly the intermediate regulator can repress it.</text>
+    </generalfeedback>
+    <answer fraction="0">
+        <text>Only the cooperativity</text>
+        <feedback>
+            <text>Incorrect. Cooperativity affects pulse sharpness more than height.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Only the degradation rate of intermediate regulator</text>
+        <feedback>
+            <text>Incorrect. While this affects pulse timing, it's not the primary determinant of height.</text>
+        </feedback>
+    </answer>
+    <answer fraction="100">
+        <text>The ratio of production to degradation rates of target gene and repression strength</text>
+        <feedback>
+            <text>Correct! These parameters determine the maximum expression level before repression takes effect.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>The initial concentration of input signal</text>
+        <feedback>
+            <text>Incorrect. Initial conditions don't primarily determine pulse height.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>The activation threshold of input signal</text>
+        <feedback>
+            <text>Incorrect. While this affects timing, it's not the main determinant of pulse height.</text>
+        </feedback>
+    </answer>
+</question>
+
+<question type="multichoice">
+    <name>
+        <text>Q10 NAR vs Simple Regulation Response Time Difference</text>
+    </name>
+    <questiontext format="html">
+        <text>The response time difference between simple regulation and negative auto-regulation is most pronounced when:</text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text>The speed advantage of negative auto-regulation comes from its ability to quickly produce protein initially and then self-limit production. This effect is most noticeable when the maximum production rate in the auto-regulated system is much higher than in simple regulation, allowing for faster initial accumulation.</text>
+    </generalfeedback>
+    <answer fraction="0">
+        <text>Both systems have low production rates</text>
+        <feedback>
+            <text>Incorrect. Low production rates in both systems would minimize the difference in response times.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Decay rates are very high</text>
+        <feedback>
+            <text>Incorrect. High decay rates would affect both systems similarly.</text>
+        </feedback>
+    </answer>
+    <answer fraction="100">
+        <text>Maximum transcription rate in auto-regulation is much higher than in simple regulation</text>
+        <feedback>
+            <text>Correct! This allows for faster initial accumulation in the auto-regulated system while maintaining the same steady state.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Hill coefficients are very low</text>
+        <feedback>
+            <text>Incorrect. Low cooperativity would actually reduce the speed advantage of negative auto-regulation.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Activation thresholds are very high</text>
+        <feedback>
+            <text>Incorrect. Very high thresholds would delay the onset of feedback, reducing the speed advantage.</text>
+        </feedback>
+    </answer>
+</question>
