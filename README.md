@@ -6,5 +6,5 @@
 
 [Session 3. Dynamics of Complex Biological circuits](https://github.com/amoyag/Biofisica/blob/main/session3_complexcircuits.ipynb)
 
-[Session 4. THE $\Beta$IG MODEL OF GLUCOSE REGULATION](https://github.com/amoyag/Biofisica/blob/main/session4_BIGmodel_dynamicalcompensation.ipynb)
+[Session 4. THE $\beta$IG MODEL OF GLUCOSE REGULATION](https://github.com/amoyag/Biofisica/blob/main/session4_BIGmodel_dynamicalcompensation.ipynb)
 
