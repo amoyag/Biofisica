@@ -2,9 +2,9 @@
 
 [Sesión 1. Introducción a las simulaciones de circuitos biológicos](https://github.com/amoyag/Biofisica/blob/main/S1_introduccion.ipynb)
 
-[Sesión 2. Autorregulación negativa](https://github.com/amoyag/Biofisica/blob/main/session2_circuit_dynamics.ipynb)
+[Sesión 2. Autorregulación negativa](https://github.com/amoyag/Biofisica/blob/main/S2_NAR.ipynb)
 
-[Session 3. Dynamics of Complex Biological circuits](https://github.com/amoyag/Biofisica/blob/main/session3_complexcircuits.ipynb)
+[Sesión 3. Feed forward loop](https://github.com/amoyag/Biofisica/blob/main/S3_FFL.ipynb)
 
-[Session 4. The &beta;IG model of glucose regulation](https://github.com/amoyag/Biofisica/blob/main/session4_BIGmodel_dynamicalcompensation.ipynb)
+[Sesión 4. lambda switch](https://github.com/amoyag/Biofisica/blob/main/session4_BIGmodel_dynamicalcompensation.ipynb)
 
