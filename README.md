@@ -1,6 +1,6 @@
 # Laboratorio computacional. Simulación de circuitos biológicos
 
-[Sesión 1. Introducción a las simulaciones de circuitos biológicos](https://github.com/amoyag/Biofisica/blob/main/session1_FFL.ipynb)
+[Sesión 1. Introducción a las simulaciones de circuitos biológicos](https://github.com/amoyag/Biofisica/blob/main/S1_introduccion.ipynb)
 
 [Sesión 2. Autorregulación negativa](https://github.com/amoyag/Biofisica/blob/main/session2_circuit_dynamics.ipynb)
 
