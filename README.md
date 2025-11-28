@@ -6,5 +6,5 @@
 
 [Sesión 3. Feed forward loop](https://github.com/amoyag/Biofisica/blob/main/S3_FFL.ipynb)
 
-[Sesión 4. lambda switch](https://github.com/amoyag/Biofisica/blob/main/session4_BIGmodel_dynamicalcompensation.ipynb)
+[Sesión 4. lambda switch](https://github.com/amoyag/Biofisica/blob/main/S4_lambdaswitch.ipynb)
 
