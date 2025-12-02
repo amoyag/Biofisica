@@ -2,7 +2,7 @@
 
 [Sesión 1. Introducción a las simulaciones de circuitos biológicos](https://github.com/amoyag/Biofisica/blob/student/S1_introduccion.ipynb)
 
-[Sesión 2. Autorregulación negativa](https://github.com/amoyag/Biofisica/blob/student/S2_NAR.ipynb) 
+[Sesión 2. Autorregulación negativa](https://github.com/amoyag/Biofisica/blob/student/S2_NAR.ipynb) [Soluciones](https://github.com/amoyag/Biofisica/blob/student/S2_NAR_soluciojnes.ipynb) 
 
 [Sesión 3. Feed forward loop](https://github.com/amoyag/Biofisica/blob/student/S3_FFL.ipynb)
 
